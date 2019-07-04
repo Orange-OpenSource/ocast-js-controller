@@ -1,0 +1,11 @@
+{
+  "browser": true,
+  "devel": true,
+  "curly": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "maxdepth": 3,
+  "undef": true,
+  "unused": true,
+  "quotmark": "doublequote"
+}

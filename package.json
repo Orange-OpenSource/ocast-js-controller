@@ -1,0 +1,53 @@
+{
+  "name": "ocast-dongletv-controller",
+  "version": "1.0.2",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "main": "cli.js",
+  "description": "Send dongle to receiver messaging",
+  "author": {
+    "name": "Olivier Teissere",
+    "email": "olivier.teissere@orange.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Orange-OpenSource/ocast-js-controller.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "Javascript",
+    "OCast",
+    "Dongle TV Controller"
+  ],
+  "devDependencies": {
+    "gulp-coverage": "^0.3.38",
+    "gulp-istanbul": "^1.1.2",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-plumber": "^1.1.0",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^0.2.0",
+    "mocha": "^3.5.3",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "jshint": "gulp jshint",
+    "test": "gulp test"
+  },
+  "bin": {
+    "d2r": "./index.js"
+  },
+  "preferGlobal": "true",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.2.0",
+    "gulp": "^3.9.1",
+    "node-ssdp": "^2.7.1",
+    "tracer": "^0.8.11",
+    "ws": "^1.1.4"
+  }
+}
