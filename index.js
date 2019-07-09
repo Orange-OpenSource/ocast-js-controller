@@ -31,6 +31,12 @@ params.command('launchApp  <APP_ID>')
         dialserver.launchApp(appId);
     });
 
+params.command('stopApp <APP_ID>')
+    .description("Stop application")
+    .action(function (appId) {
+        dialserver.stopApp(appId);
+});
+
 params.command('send <message>')
     .description('Send message')
     .option('-n, --namespace <namespace>', 'Override default namespace')
