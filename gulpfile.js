@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var mocha = require('gulp-mocha');
+var istanbul = require('gulp-istanbul');
 var $ = require('gulp-load-plugins')();
 
 
@@ -24,8 +25,6 @@ gulp.task('jshint', function () {
         .pipe($.jscs())
         .pipe($.jshint.reporter('jshint-stylish'));
 });
-
-var istanbul = require('gulp-istanbul');
 
 gulp.task('pre-test', function () {
     return gulp.src(['lib/**/*.js'])
