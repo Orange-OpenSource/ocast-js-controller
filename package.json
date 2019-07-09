@@ -26,12 +26,12 @@
     "gulp-jscs": "^4.0.0",
     "gulp-jshint": "^2.0.4",
     "gulp-load-plugins": "^1.5.0",
-    "gulp-mocha": "^3.0.1",
+    "gulp-mocha": "^6.0.0",
     "gulp-plumber": "^1.1.0",
     "jscs": "^3.0.7",
     "jshint": "^2.9.5",
     "jshint-stylish": "^0.2.0",
-    "mocha": "^3.5.3",
+    "mocha": "^6.1.4",
     "request": "^2.88.0"
   },
   "scripts": {
@@ -39,9 +39,9 @@
     "test": "gulp test"
   },
   "bin": {
-    "d2r": "./index.js"
+    "ocastc": "./index.js"
   },
-  "preferGlobal": "true",
+  "preferGlobal": true,
   "dependencies": {
     "colors": "^1.1.2",
     "commander": "^2.2.0",
