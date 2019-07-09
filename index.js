@@ -49,8 +49,8 @@ params.command('load <sample_name>')
     var type = null;
     var url = null;
     switch (sample) {
-        case "smooth": url = "http://amssamples.streaming.mediaservices.windows.net/683f7e47-bd83-4427-b0a3-26a6c4547782/BigBuckBunny.ism/manifest"; type = "video"; break;
         case "mp4": url = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"; type = "video"; break;
+        case "dash": url = "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd"; type = "video"; break;
         case "jpg": url = "http://placekitten.com/g/800/600"; type = "image"; break;
         case "gif": url = "https://thumbs.gfycat.com/OptimisticIndelibleConch-size_restricted.gif"; type = "image"; break;
         case "mp3": url = "http://datashat.net/music_for_programming_15-dan_adeyemi.mp3"; type = "audio"; break;
