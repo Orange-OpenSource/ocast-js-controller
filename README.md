@@ -40,6 +40,14 @@ The dongle IP address can also be setup in your environment variables:
 
 ## Commands and examples (see index.js)
 
+### Launch application
+
+    ocastc launchApp <appId>
+    
+### Stop application
+
+    ocastc stopApp <appId>
+    
 ### Search Dial TV Receivers
 
     ocastc search
