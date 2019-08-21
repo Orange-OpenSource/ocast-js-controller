@@ -44,22 +44,20 @@ params.command('send <message>')
         client.sendMessage(JSON.parse(cmd), options.namespace)
     });
 
-params.command('prepare <url> <type>')
-    .description('Prepare a new media with type video|image|sound')
+params.command('load <url> <type>')
+    .description('Load/prepare a new media with type video|image|sound')
     .action(function (url, type) {
         client.prepare(url, type);
     });
-params.command('load <sample_name>')
-.description('Load a test sample ( smooth|mp4|mp3|jpg|gif  )')
+
+params.command('test <mp4|dash>')
+.description('Load/prepare a test sample')
 .action(function (sample) {
     var type = null;
     var url = null;
     switch (sample) {
-        case "mp4": url = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"; type = "video"; break;
+        case "mp4": url = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"; type = "video"; break;
         case "dash": url = "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd"; type = "video"; break;
-        case "jpg": url = "http://placekitten.com/g/800/600"; type = "image"; break;
-        case "gif": url = "https://thumbs.gfycat.com/OptimisticIndelibleConch-size_restricted.gif"; type = "image"; break;
-        case "mp3": url = "http://datashat.net/music_for_programming_15-dan_adeyemi.mp3"; type = "audio"; break;
         default: logger.error("Sample " + sample + " not found !"); exit();
     }
     client.prepare(url, type);

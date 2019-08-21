@@ -43,7 +43,12 @@ The dongle IP address can also be setup in your environment variables:
 ### Launch application
 
     ocastc launchApp <appId>
-    
+
+You can launch the application samples that are provided in the [ocast-receiver-samples](https://github.com/Orange-OpenSource/ocast-receiver-samples) project.
+The following applications can be launched:
+- OCast-Sample-MediaReceiver: Media receiver using native HTML5 <video> element 
+- OCast-Sample-MSEMediaReceiver: Media receiver using the [dash.js](https://github.com/Dash-Industry-Forum/dash.js) MSE/EME based HTML5 player
+
 ### Stop application
 
     ocastc stopApp <appId>
@@ -59,10 +64,9 @@ The dongle IP address can also be setup in your environment variables:
 ### Other examples
 
 ```
-    ocastc load mp4
-    ocastc test smooth
+    ocastc test mp4
+    ocastc test dash
     ocastc pause
     ocastc volume 0.4
-    ocastc listen
     ocastc close
 ```
